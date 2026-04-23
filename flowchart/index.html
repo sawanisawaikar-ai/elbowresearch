@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tennis Elbow (Lateral Epicondylopathy) - Clinical Management Flowchart</title>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0 0 10px 0;
+            font-size: 1.8em;
+        }
+        .header p {
+            margin: 0;
+            opacity: 0.9;
+        }
+        .content {
+            padding: 30px;
+        }
+        .mermaid {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .legend {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 30px;
+        }
+        .legend h3 {
+            margin-top: 0;
+            color: #333;
+        }
+        .legend-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .legend-color {
+            width: 20px;
+            height: 20px;
+            border-radius: 4px;
+        }
+        .sources {
+            margin-top: 30px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+        }
+        .sources h3 {
+            margin-top: 0;
+        }
+        .sources ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+        .sources li {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎾 Tennis Elbow (Lateral Epicondylopathy)</h1>
+            <p>Clinical Management Flowchart Based on Evidence-Based Guidelines</p>
+        </div>
+        <div class="content">
+            <div class="mermaid">
+flowchart TD
+    A["🎯 PATIENT PRESENTS<br/>with Lateral Elbow Pain"] --> B{Assessment}
+
+    B --> C["📋 History Taking<br/>• Duration of symptoms<br/>• Activity/work factors<br/>• Previous injuries<br/>• Risk factors"]
+
+    B --> D["🔍 Clinical Examination<br/>• Cozen's Test<br/>• Mill's Test<br/>• Palpation<br/>• Range of motion"]
+
+    C --> E{Diagnosis}
+
+    D --> E
+
+    E --> F["✓ Confirmed Diagnosis:<br/>Lateral Epicondylopathy<br/>(Tennis Elbow)"]
+
+    E --> G["❌ Rule Out:<br/>• Radial Tunnel Syndrome<br/>• Cervical Radiculopathy<br/>• Ligamentous Injury<br/>• Articular Pathology"]
+
+    F --> H{Symptom<br/>Duration}
+
+    H -->|Acute<br/>< 3 months| I["📌 Treatment Phase 1: Acute (Weeks 1-2)<br/>• Activity modification<br/>• Ice/heat therapy<br/>• Pain management<br/>• Isometric exercises"]
+
+    H -->|Subacute<br/>3-4 weeks| J["📌 Treatment Phase 2: Subacute<br/>• Progressive stretching<br/>• Light resistance exercises<br/>• Counterforce bracing<br/>• Wrist splinting"]
+
+    H -->|Chronic<br/>> 4 weeks| K["📌 Treatment Phase 3: Chronic<br/>• Eccentric strengthening<br/>• Combined movements<br/>• Resistance training<br/>• Functional exercises"]
+
+    I --> L{Progress?}
+
+    J --> L
+
+    K --> L
+
+    L -->|Yes ✓| M["✅ Continue Conservative Treatment<br/>• Monitor symptoms<br/>• Progress exercises<br/>• Gradual return to activity"]
+
+    L -->|No ✗| N{3+ Months<br/>Conservative<br/>Failed?}
+
+    M --> O["📊 Outcome<br/>90-95% success with<br/>conservative treatment"]
+
+    N -->|No| J
+
+    N -->|Yes| P["🔧 Surgical Options<br/>• Percutaneous release<br/>• Arthroscopic release<br/>• Open debridement"]
+
+    P --> Q["⚠️ Surgery Risks<br/>• Radial nerve injury<br/>• Ligament damage<br/>• Requires rehabilitation"]
+
+    O --> R["📝 Prevention & Education<br/>• Activity modification<br/>• Ergonomic adjustments<br/>• Preventive exercises<br/>• 20-30% recurrence rate"]
+
+    Q --> R
+
+    style A fill:#e3f2fd,stroke:#1976d2
+    style B fill:#fff3e0,stroke:#f57c00
+    style C fill:#e8f5e9,stroke:#388e3c
+    style D fill:#e8f5e9,stroke:#388e3c
+    style E fill:#fff3e0,stroke:#f57c00
+    style F fill:#c8e6c9,stroke:#4caf50
+    style G fill:#ffcdd2,stroke:#f44336
+    style H fill:#fff3e0,stroke:#f57c00
+    style I fill:#bbdefb,stroke:#2196f3
+    style J fill:#b2dfdb,stroke:#009688
+    style K fill:#d1c4e9,stroke:#7c4dbf
+    style L fill:#fff3e0,stroke:#f57c00
+    style M fill:#c8e6c9,stroke:#4caf50
+    style N fill:#fff3e0,stroke:#f57c00
+    style O fill:#c8e6c9,stroke:#4caf50
+    style P fill:#d1c4e9,stroke:#7c4dbf
+    style Q fill:#ffcdd2,stroke:#f44336
+    style R fill:#e0f7fa,stroke:#00bcd4
+            </div>
+
+            <div class="legend">
+                <h3>📊 Treatment Evidence Levels</h3>
+                <div class="legend-grid">
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: #c8e6c9; border: 2px solid #4caf50;"></div>
+                        <span>Strong Evidence (Recommended)</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: #bbdefb; border: 2px solid #2196f3;"></div>
+                        <span>Moderate Evidence (Consider)</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: #d1c4e9; border: 2px solid #7c4dbf;"></div>
+                        <span>Chronic Cases / Alternative Options</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: #ffcdd2; border: 2px solid #f44336;"></div>
+                        <span>Rule Out / Caution Required</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sources">
+                <h3>📚 Sources</h3>
+                <ul>
+                    <li><strong>GOV.UK</strong> - Health and Safety Executive: Tennis Elbow (Lateral Epicondylitis) Guidelines</li>
+                    <li><strong>University of British Columbia (2016)</strong> - Lateral Epicondyle Tendinopathy: Summary of Evidence</li>
+                    <li><strong>Journal of Orthopaedic & Sports Physical Therapy (2022)</strong> - Lateral Elbow Pain Clinical Practice Guidelines</li>
+                    <li><strong>JSciMed Central (2017)</strong> - Lateral Epicondylopathy: A Review of Current Concepts and Treatment</li>
+                    <li><strong>Melbourne Hand Therapy (2020)</strong> - Management of Lateral Elbow Tendinopathy</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: 'base',
+            themeVariables: {
+                fontFamily: 'Segoe UI, Tahoma, Geneva, Verdana, sans-serif',
+                fontSize: '14px'
+            },
+            flowchart: {
+                useMaxWidth: true,
+                htmlLabels: true,
+                curve: 'basis'
+            }
+        });
+    </script>
+</body>
+</html>
